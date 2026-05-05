@@ -24,6 +24,12 @@
     scroll-behavior: smooth;
 }
 
+/* Performance Optimizations for Mobile */
+section {
+    content-visibility: auto;
+    contain-intrinsic-size: 600px;
+}
+
 *:focus-visible {
     outline: 3px solid var(--brand-accent);
     outline-offset: 3px;
