@@ -24,6 +24,22 @@
     scroll-behavior: smooth;
 }
 
+*:focus-visible {
+    outline: 3px solid var(--brand-accent);
+    outline-offset: 3px;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px; left: 0;
+    background: var(--brand-accent);
+    color: white; padding: 8px; z-index: 9999;
+    font-weight: bold; text-decoration: none;
+    transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
 body {
     font-family: var(--font-body);
     color: var(--text-main);
@@ -332,4 +348,13 @@ h3 { font-size: 1.6rem; }
     .main-image { height: 400px; }
     .stat-val { font-size: 2.8rem; }
     .btn { width: 100%; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
