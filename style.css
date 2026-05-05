@@ -26,8 +26,7 @@
 
 /* Performance Optimizations for Mobile */
 section {
-    content-visibility: auto;
-    contain-intrinsic-size: 600px;
+    /* Removed content-visibility to prevent false-positive contrast errors in Lighthouse */
 }
 
 *:focus-visible {
@@ -282,9 +281,9 @@ h3 { font-size: 1.6rem; }
 .process h2 { color: white; }
 .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 .step { position: relative; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1); }
-.step-num { font-size: 4rem; font-family: var(--font-head); font-weight: 800; color: rgba(255,255,255,0.1); position: absolute; top: 10px; right: 20px; line-height: 1; }
+.step-num { font-size: 4rem; font-family: var(--font-head); font-weight: 800; color: rgba(255,255,255,0.4); position: absolute; top: 10px; right: 20px; line-height: 1; }
 .step h4 { color: white; font-size: 1.4rem; margin-top: 1.5rem; margin-bottom: 1rem; }
-.step p { color: rgba(255,255,255,0.7); font-size: 1rem; }
+.step p { color: rgba(255,255,255,0.85); font-size: 1rem; }
 
 /* Testimonials */
 .testimonials { padding: 8rem 0; background: var(--brand-light); }
