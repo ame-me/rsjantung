@@ -2,12 +2,12 @@
 :root {
     --brand-dark: #001f3f;       /* Deep Navy */
     --brand-primary: #0056b3;    /* Trust Blue */
-    --brand-accent: #e63946;     /* Medical Red */
+    --brand-accent: #d3202e;     /* Medical Red (Darkened for a11y contrast) */
     --brand-light: #e0f2fe;      /* Soft Light Blue */
     --surface-white: #ffffff;
     --surface-offwhite: #f8fafc;
     --text-main: #1e293b;
-    --text-muted: #64748b;
+    --text-muted: #475569;       /* Darker grey for a11y contrast */
     
     --font-head: 'Outfit', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -62,7 +62,7 @@ h3 { font-size: 1.6rem; }
 
 .subtitle {
     display: inline-block;
-    color: var(--brand-primary);
+    color: #004085;
     font-weight: 700;
     font-size: 0.95rem;
     letter-spacing: 2px;
@@ -144,7 +144,7 @@ h3 { font-size: 1.6rem; }
 .badge-new {
     display: inline-block;
     background: rgba(0, 86, 179, 0.1);
-    color: var(--brand-primary);
+    color: #004085;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-weight: 700;
